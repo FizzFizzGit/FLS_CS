@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Configuration>Release</Configuration>
+    <Constitution>Release</Constitution>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
     <OutputType>WinExe</OutputType>
     <PublishTrimmed>false</PublishTrimmed>
     <ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
@@ -12,7 +14,7 @@
     <PublishReadyToRun>true</PublishReadyToRun>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContaind>false</SelfContaind>
-    <DebugType>embedded</DebugType>
+    <Optimize>true</Optimize>
   </PropertyGroup>
   
 </Project>
