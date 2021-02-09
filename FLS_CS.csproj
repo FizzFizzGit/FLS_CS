@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Configuration>Release</Configuration>
+    <OutputType>WinExe</OutputType>
+    <PublishTrimmed>false</PublishTrimmed>
+    <ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+    <SupportedCultures>ja-JP;</SupportedCultures>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContaind>false</SelfContaind>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  
+</Project>
