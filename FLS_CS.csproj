@@ -1,19 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Configuration>Release</Configuration>
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
     <OutputType>WinExe</OutputType>
     <ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
     <SupportedCultures>ja-JP;</SupportedCultures>
-    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishReadyToRun>false</PublishReadyToRun>
     <PublishSingleFile>true</PublishSingleFile>
     <PublishTrimmed>false</PublishTrimmed>
-    <SelfContaind>false</SelfContaind>
+    <SelfContained>false</SelfContained>
     <Optimize>true</Optimize>
   </PropertyGroup>
   
