@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis" Version="1.52.0" />
     <PackageReference Include="Google.Apis.Auth" Version="1.52.0" />
     <PackageReference Include="Google.Apis.Drive.v3" Version="1.52.0.2354" />
   </ItemGroup>

@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace GD_URIConv
+namespace GD_URIConvert
 {
     /// <summary>
     /// Interaction logic for App.xaml
