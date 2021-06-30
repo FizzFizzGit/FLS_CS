@@ -12,24 +12,11 @@
     ResizeMode="CanResizeWithGrip">
 
     <Window.Resources>
-        <ControlTemplate x:Key="buttonTemplate" TargetType="Button">
+        <ControlTemplate x:Key="ButtonTemplate" TargetType="Button">
             <Border Name="border"
                 BorderThickness="0"
-                Background="{TemplateBinding Background}"
+                Background="#474747"
                 CornerRadius="3">
-                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
-            </Border>
-
-        </ControlTemplate>
-
-        <ControlTemplate x:Key="squareButtonTemplate" TargetType="Button">
-            <Border Name="border"
-                BorderThickness="0"
-                Background="{TemplateBinding Background}"
-                CornerRadius="3"
-                Width="20"
-                Height="20">
                 <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
             </Border>
@@ -42,11 +29,6 @@
         <Grid.Resources>
             <Style TargetType="Button">
                 <Setter Property="Margin" Value="0,5,5,5"/>
-                <Setter Property="Background" Value="#474747"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="FontFamily" Value="Century Gothic"/>
-                <Setter Property="FontSize" Value="16"/>
-                <Setter Property="FontWeight" Value="UltraBold"/>
 
             </Style>
             
@@ -99,7 +81,11 @@
                     Grid.Column="1"
                     Content="Submit"
                     Click="Button_Submit_Click"
-                    Template="{StaticResource buttonTemplate}">
+                    Foreground="White"
+                    FontFamily="Century Gothic"
+                    FontSize="16"
+                    FontWeight="UltraBold"
+                    Template="{StaticResource ButtonTemplate}">
                     
             </Button>
 
@@ -122,34 +108,39 @@
                                 Click="Button_Erase_Click"
                                 VerticalAlignment="Center"
                                 HorizontalAlignment="Center"
+                                Foreground="White"
                                 Margin="0,0,5,0"
-                                Template="{StaticResource squareButtonTemplate}">
+                                Width="20"
+                                Height="20"
+                                FontFamily="Century Gothic"
+                                FontSize="16"
+                                FontWeight="UltraBold"
+                                Template="{StaticResource ButtonTemplate}">
 
                             </Button>
                             
-                            <Image Source="{Binding Graphic}" Width="100" Height="100"/>
+                            <Button x:Name="Button_SubWindowOpen"
+                                Click="Button_SubWindowOpen_Click"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Width="100"
+                                Height="100"
+                                Template="{StaticResource ButtonTemplate}">
 
-                            <Grid>
+                                <Image Source="{Binding Graphic}" Width="100" Height="100"/>
+
+                            </Button>
+
+                            <Button x:Name="Button_Copy" 
+                                Click="Button_Copy_Click"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Width="300"
+                                Height="100">
+
                                 <TextBlock Text="{Binding URLText}" VerticalAlignment="Center" Padding="5"/>
-                                
-                                <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="5,0,0,0">
-                                    <Button x:Name="Button_Copy" 
-                                        Content="C" 
-                                        Click="Button_Copy_Click"
-                                        Template="{StaticResource squareButtonTemplate}">
 
-                                    </Button>
-
-                                    <Button x:Name="Button_SubWindowOpen" 
-                                        Content="V" 
-                                        Click="Button_SubWindowOpen_Click"
-                                        Template="{StaticResource squareButtonTemplate}">
-                                    
-                                    </Button>
-
-                                </StackPanel>
-
-                            </Grid>
+                            </Button>
 
                         </StackPanel>
 
