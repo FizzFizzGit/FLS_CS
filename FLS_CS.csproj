@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Version>1.2.0.0</Version>
+    <Copyright>FizzFizz</Copyright>
+    <AssemblyOriginatorKeyFile>fizzfizz.pfx</AssemblyOriginatorKeyFile>
     <OutputType>WinExe</OutputType>
     <ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
     <TargetFramework>net5.0-windows</TargetFramework>

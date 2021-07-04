@@ -1,6 +1,8 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Interop;
 
 namespace GD_URIConvert
 {
@@ -24,6 +26,8 @@ namespace GD_URIConvert
             
         private const string TEXTBOX_DEFAULT_TEXT = "URLを入力してください。";
 
+        private ClipboardHelper IClipboardHelper;
+    
         public ObservableCollection<ListItem> ListItems;
 
         //コンストラクタ
@@ -31,7 +35,19 @@ namespace GD_URIConvert
             InitializeComponent();
             ListItems = new ObservableCollection<ListItem>();
             this.DataContext = ListItems;
+            this.Loaded += MainWindow_Loaded;
+            this.Closing += MainWindow_Closing;
 
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e){
+            IClipboardHelper.Stop();
+        }
+        
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e){
+            IClipboardHelper = new ClipboardHelper(new WindowInteropHelper(this).Handle);
+            IClipboardHelper.DrawClipboard += ClipboardHelper_DrawClipboard;
+            IClipboardHelper.Start();
         }
 
         //イベントハンドラここから
@@ -80,8 +96,12 @@ namespace GD_URIConvert
             }
 
         }
-        //イベントハンドラここまで
 
+        private void ClipboardHelper_DrawClipboard(object sender, EventArgs e){
+            AddList(Clipboard.GetText());
+        }
+        //イベントハンドラここまで
+        
     }
 
 }
