@@ -5,23 +5,49 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:GD_URIConvert"
     mc:Ignorable="d"
-    Title="GD_URIConvert_for_Image"
+    Title="FF14 LodeStonetools"
     Height="300"
     Width="450"
     Style="{StaticResource window_common}"
     ResizeMode="CanResizeWithGrip">
 
     <Window.Resources>
-        <ControlTemplate x:Key="ButtonTemplate" TargetType="Button">
-            <Border Name="border"
-                BorderThickness="0"
-                Background="#474747"
-                CornerRadius="3">
-                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Style x:Key="_CornerRadiusButtonStyle" TargetType="Button">
+            <Setter Property="FontFamily" Value="Century Gothic"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="UltraBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border"
+                            BorderThickness="0"
+                            CornerRadius="3">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
 
-            </Border>
+                        </Border>
 
-        </ControlTemplate>
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+        
+        <Style x:Key="Gray_CornerRadiusButtonStyle"
+            TargetType="Button"
+            BasedOn="{StaticResource _CornerRadiusButtonStyle}">
+            <Setter Property="Background" Value="#474747"/>
+
+        </Style>
+
+        <Style x:Key="Red_CornerRadiusButtonStyle"
+            TargetType="Button"
+            BasedOn="{StaticResource _CornerRadiusButtonStyle}">
+            <Setter Property="Background" Value="#dc143c"/>
+
+        </Style>
 
     </Window.Resources>
 
@@ -82,10 +108,7 @@
                     Content="Submit"
                     Click="Button_Submit_Click"
                     Foreground="White"
-                    FontFamily="Century Gothic"
-                    FontSize="16"
-                    FontWeight="UltraBold"
-                    Template="{StaticResource ButtonTemplate}">
+                    Style="{DynamicResource Gray_CornerRadiusButtonStyle}">
                     
             </Button>
 
@@ -94,14 +117,15 @@
         <!-- 真ん中のリスト部 -->
         <ScrollViewer x:Name="Scroll_Panel"
             Grid.Row="2"
-            Grid.ColumnSpan="3"
-            Margin="0,0,0,5">
+            Margin="0,0,0,5"
+            >
             
             <ListBox x:Name="URLList"
                 SelectionMode="Single"
                 ItemsSource="{Binding}">
 
                 <ListBox.ItemContainerStyle>
+                    <!-- マウスオーバーで選択可能にするやつ -->
                     <Style TargetType="ListBoxItem">
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
@@ -112,7 +136,7 @@
                         </Style.Triggers>
 
                     </Style>
-                    
+
                 </ListBox.ItemContainerStyle>
 
                 <ListBox.ItemTemplate>
@@ -121,26 +145,19 @@
                             <Button x:Name="Button_Erase" 
                                 Content="×" 
                                 Click="Button_Erase_Click"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
                                 Foreground="White"
                                 Margin="0,0,5,0"
                                 Width="20"
-                                Height="20"
-                                FontFamily="Century Gothic"
-                                FontSize="16"
-                                FontWeight="UltraBold"
-                                Template="{StaticResource ButtonTemplate}">
+                                Height="100"
+                                Style="{DynamicResource Red_CornerRadiusButtonStyle}">
 
                             </Button>
                             
                             <Button x:Name="Button_SubWindowOpen"
                                 Click="Button_SubWindowOpen_Click"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
                                 Width="100"
                                 Height="100"
-                                Template="{StaticResource ButtonTemplate}">
+                                Style="{DynamicResource Gray_CornerRadiusButtonStyle}">
 
                                 <Image Source="{Binding Graphic}" Width="100" Height="100"/>
 
@@ -148,12 +165,13 @@
 
                             <Button x:Name="Button_Copy" 
                                 Click="Button_Copy_Click"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                Width="300"
                                 Height="100">
 
-                                <TextBlock Text="{Binding URLText}" VerticalAlignment="Center" Padding="5"/>
+                                <TextBlock Text="{Binding URLText}"
+                                    TextWrapping="Wrap"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Padding="5"/>
 
                             </Button>
 
