@@ -1,26 +1,26 @@
-<Window x:Class="GD_URIConvert.SubWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GD_URIConvert"
-        mc:Ignorable="d"
-        Style="{StaticResource window_common}"
-        Title="SubWindow" Height="300" Width="350" ResizeMode="CanResizeWithGrip">
+<Window 
+    x:Class="GD_URIConvert.SubWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:GD_URIConvert"
+    mc:Ignorable="d"
+    Height="300"
+    Width="350"
+    ResizeMode="CanResizeWithGrip"
+    Title="Preview"
+    Style="{StaticResource window_common}">
 
     <Window.Resources>
-        <ControlTemplate x:Key="buttonTemplate" TargetType="Button">
-            <Border Name="border"
-                BorderThickness="1"
-                BorderBrush="DarkGray"
-                Background="{TemplateBinding Background}"
-                CornerRadius="3">
-                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WindowStyle.xaml"/>
 
-            </Border>
+            </ResourceDictionary.MergedDictionaries>
 
-        </ControlTemplate>
-
+        </ResourceDictionary>
+        
     </Window.Resources>
 
     <ScrollViewer  Margin="5">
