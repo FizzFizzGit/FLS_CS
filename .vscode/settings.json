@@ -1,0 +1,14 @@
+{
+    "git.ignoreLimitWarning": true,
+    "[git-commit]": {
+
+        "editor.rulers": [
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    "[git-rebase]": {
+    
+        "workbench.editor.restoreViewState": false
+    }
+}
