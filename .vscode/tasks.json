@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "/p:Configuration=Debug",
+                "/p:DebugSymbols=true",
+                "/p:DebugType=full",
+                "${workspaceFolder}/FLS_CS.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:PerformanceSummary;Summary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "/p:Configuration=Release",
+                "/p:DebugSymbols=false",
+                "/p:DebugType=none",
+                "${workspaceFolder}/FLS_CS.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
