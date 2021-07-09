@@ -3,18 +3,19 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace GD_URIConv
+namespace GD_URIConvert
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class MainWindow : Window{
+        private const string CopyMessage = "Copy : ";
 
         private void SetClipboard(int itemIndex){
             if(itemIndex < 0){return;}
             string url = ListItems[itemIndex].URLText;
             Clipboard.SetData(DataFormats.Text,url);
-            MessageBox.Show("Copy : " + url);
+            MessageBox.Show(CopyMessage + url);
             
         }
 

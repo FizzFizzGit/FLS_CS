@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace GD_URIConv
+namespace GD_URIConvert
 {
     /// <summary>
     /// Window1.xaml の相互作用ロジック
