@@ -64,8 +64,7 @@
         <ScrollViewer
             x:Name="Scroll_Panel"
             Grid.Row="2"
-            Margin="0,0,0,5"
-            >
+            Margin="0,0,0,24">
             <ListBox
                 x:Name="URLList"
                 SelectionMode="Single"
@@ -80,10 +79,8 @@
                                 Click="Button_Erase_Click"
                                 Width="20"
                                 Height="100"
-                                Style="{StaticResource Red_RoundedButtonStyle}">
+                                Style="{StaticResource Red_RoundedButtonStyle}"/>
 
-                            </Button>
-                            
                             <Button
                                 x:Name="Button_SubWindowOpen"
                                 Click="Button_SubWindowOpen_Click"
@@ -118,6 +115,11 @@
             </ListBox>
 
         </ScrollViewer>
+
+        <StatusBar x:Name="StatusBar" Grid.Row="3" Height="24" VerticalAlignment="Bottom">
+            <TextBlock x:Name="StatusText" FontSize="12" VerticalAlignment="Center"/>
+
+        </StatusBar>
 
     </Grid>
 
