@@ -13,13 +13,7 @@
     Style="{StaticResource window_common}">
 
     <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/WindowStyle.xaml"/>
-
-            </ResourceDictionary.MergedDictionaries>
-
-        </ResourceDictionary>
+        <ResourceDictionary Source="/WindowStyle.xaml"/>
         
     </Window.Resources>
 
