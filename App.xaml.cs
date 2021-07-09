@@ -15,7 +15,7 @@ namespace GD_URIConvert
             if(itemIndex < 0){return;}
             string url = ListItems[itemIndex].URLText;
             Clipboard.SetData(DataFormats.Text,url);
-            MessageBox.Show(CopyMessage + url);
+            StatusText.Text = CopyMessage + url;
             
         }
 
