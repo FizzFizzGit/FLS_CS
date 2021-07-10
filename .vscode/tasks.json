@@ -3,6 +3,7 @@
     "tasks": [
         {
             "label": "build",
+            "detail": "debug build",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -18,6 +19,7 @@
         },
         {
             "label": "publish",
+            "detail": "release build",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -29,7 +31,14 @@
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "dependsOn":["Signation"]
+        },
+        {
+            "label":"signation",
+            "detail": "sign file",
+            "command":"signtool sign /f fizzfizz.pfx /p unicorn6 /t http://timestamp.digicert.com /fd SHA256 ${workspaceFolder}/bin/Release/net5.0-windows/win10-x64/publish/FLS_CS.exe",
+            "type": "shell"
         }
     ]
 }
