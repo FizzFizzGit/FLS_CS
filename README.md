@@ -4,7 +4,7 @@ For Jp
 ## FLS(FF14 LodeStone tools)について。
 
 この度は当アプリケーションをダウンロードいただきありがとうございます。
-FLSは”FINAL FANTASY ⅩⅣ”の公式サイトであるLodestone利用者を対象としています。
+FLSは"FINAL FANTASY XIV"の公式サイトであるLodestone利用者を対象としています。
 
 
 For En
