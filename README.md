@@ -12,7 +12,10 @@
 
 ### 動作環境
 
->.NET5.0がインストールされたWindows10PC上で動作します。インストールしていない場合以下リンクよりインストールして下さい。
+>.NET5.0がインストールされたWindowsPC上で動作します。インストールしていない場合以下リンクよりインストールして下さい。  
+>x64用.NET5.0  
+>[ダウンロード](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer
+)
 
 ### 使用法
 
@@ -37,7 +40,9 @@ FLS is intended for Lodestone users, the official website of
 
 ### Operating environment
 
->It runs on a Windows 10 PC with .NET 5.0 installed. If you have not installed it, please install it from the link below.
+>It runs on a Windows 10 PC with .NET 5.0 installed. If you have not installed it, please install it from the link below.  
+>.NET 5.0 for x64  
+>[Download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer)
 
 ### how to use
 
