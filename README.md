@@ -4,15 +4,15 @@
 
 ## FLS(FF14 LodeStone tools)について。
 
->この度は当アプリケーション（以下FLS）をダウンロードいただきありがとうございます。FLSは"FINAL FANTASY XIV"の公式サイトであるLodestone利用者を対象としています。
+>* この度は当アプリケーション（以下FLS）をダウンロードいただきありがとうございます。FLSは"FINAL FANTASY XIV"の公式サイトであるLodestone利用者を対象としています。
 
 ### 概要
 
->Lodestoneの日記機能を使い画像をアップロードする際、外部画像参照を用いることでサーバー容量が削減できます。FLSはGoogleDriveの共有URLを外部画像参照に使うことのできる形式に変換します。
+>* Lodestoneの日記機能を使い画像をアップロードする際、外部画像参照を用いることでサーバー容量が削減できます。FLSはGoogleDriveの共有URLを外部画像参照に使うことのできる形式に変換します。
 
 ### 動作環境
 
->.NET5.0がインストールされたWindowsPC上で動作します。インストールしていない場合以下リンクよりインストールして下さい。  
+>* .NET5.0がインストールされたWindowsPC上で動作します。インストールしていない場合以下リンクよりインストールして下さい。  
 >x64用.NET5.0  
 >[ダウンロード](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer
 )
@@ -36,11 +36,11 @@ FLS is intended for Lodestone users, the official website of
 
 ### Overview
 
->When uploading an image using Lodestone's diary function, you can reduce the server capacity by using an external image reference. FLS converts Google Drive shared URLs into a format that can be used for external image references.
+>* When uploading an image using Lodestone's diary function, you can reduce the server capacity by using an external image reference. FLS converts Google Drive shared URLs into a format that can be used for external image references.
 
 ### Operating environment
 
->It runs on a Windows 10 PC with .NET 5.0 installed. If you have not installed it, please install it from the link below.  
+>* It runs on a Windows 10 PC with .NET 5.0 installed. If you have not installed it, please install it from the link below.  
 >.NET 5.0 for x64  
 >[Download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer)
 
