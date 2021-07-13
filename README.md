@@ -28,8 +28,7 @@
 
 ## About FLS(FF14 LodeStone tools).
 
->Thank you for downloading this application.  
->FLS is intended for Lodestone users, the official website of
+>Thank you for downloading this application. FLS is intended for Lodestone users, the official website of
 "FINAL FANTASY XIV".
 
 ### Overview
