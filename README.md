@@ -1,4 +1,5 @@
 ## [To english version](https://github.com/FizzFizzGit/FLS_CS/tree/test1.2beta1#please-read-first)
+
 # 初めにお読み下さい。
 
 ## FLS(FF14 LodeStone tools)について。
@@ -13,7 +14,6 @@
 
 >.NET5.0がインストールされたWindows10PC上で動作します。インストールしていない場合以下リンクよりインストールして下さい。
 
-
 ### 使用法
 
 >1. FLSを起動し、GoogleDrive上の任意の画像の共有URLを制限なしで取得すると、クリップボードに共有URLがコピーされます。
@@ -22,6 +22,7 @@
 >4. 通常通り画像リストから選択し記事に貼り付け。
 
 ## [To top](https://github.com/FizzFizzGit/FLS_CS/tree/test1.2beta1#%E5%88%9D%E3%82%81%E3%81%AB%E3%81%8A%E8%AA%AD%E3%81%BF%E4%B8%8B%E3%81%95%E3%81%84)
+
 # Please read first.
 
 ## About FLS(FF14 LodeStone tools).
@@ -44,4 +45,3 @@ FLS is intended for Lodestone users, the official website of
 >2. Click the converted URL displayed on the FLS list. It will be copied to the clipboard.
 >3. Upload the URL with Lodestone's external image reference function.
 >4. Select from the image list and paste it into the article as usual.
-
