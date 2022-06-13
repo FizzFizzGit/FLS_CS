@@ -1,7 +1,7 @@
 For Jp
 # 初めにお読み下さい。
 
-## FF14 FLS(FF14 LodeStone tools)について。
+## VetDI(動物用医薬品指示書データ管理)について。
 
 この度は当アプリケーションをダウンロードいただきありがとうございます。
 
@@ -9,6 +9,6 @@ For Jp
 For En
 # Please read first.
 
-## About FLS(FF14 LodeStone tools).
+## About VetDI(Veterinary drug instruction data management).
 
 Thank you for downloading this application.
