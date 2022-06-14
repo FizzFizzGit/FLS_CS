@@ -28,7 +28,7 @@
 
 # Please read first.
 
-## About FLS(FF14 LodeStone tools).
+## About VetDI(Veterinary drug instruction data management).
 
 Thank you for downloading this application.
 FLS is intended for Lodestone users, the official website of
